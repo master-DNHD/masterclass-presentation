@@ -1,0 +1,1 @@
+Content from `content/imprimer/index.md`

@@ -1,0 +1,13 @@
+baseURL: "http://example.org/"
+languageCode: "fr-FR"
+title: "Camille"
+theme: "xmin"
+
+menu:
+  main:
+    - name: Accueil
+      url: ""
+      weight: 1
+    - name: Version imprimable
+      url: "imprimer/"
+      weight: 2
