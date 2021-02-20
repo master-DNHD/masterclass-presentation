@@ -3,6 +3,25 @@ languageCode: "fr-FR"
 title: "Masterclass Manuel Zacklad"
 theme: "xmin"
 
+params:
+  description: "Description du site"
+  keywords:
+    - mot 1
+    - mot 2
+  authors:
+    - Morgane Hebinck
+    - Petuna Lysiane Assa Akue
+    - Leeloo Arrondell
+    - Théo Jeanticou
+    - Guillaume Brioudes
+    - Marie-Camille Maumont
+    - Stéfan Ménard
+    - Isabella Loconte
+    - Nicolas Gourdon
+    - Lucas Schlüter
+    - Stéphane Popov
+    - Léo-Paul Dubourg
+
 menu:
   main:
     - name: Accueil
