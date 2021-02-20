@@ -8,4 +8,4 @@ cd masterclass-presentation
 hugo serve
 ```
 
-Chaque article et son contenu est intégré dans la page `Version imprimable`. Lors de son chargement elle lance PagesJs et l'impression du contenu du site.
+Chaque article et son contenu est intégré dans la page `Version imprimable`. Lors de son chargement on lance PagesJs et l'impression du contenu du site.

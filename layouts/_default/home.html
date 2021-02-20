@@ -10,7 +10,7 @@
 
 <h2>Autres parties</h2>
 
-<ul>
+<ul class="no-list-style">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
