@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    {{ partial "head_custom.html" . }}
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
+  {{ partial "head_custom.html" . }}
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <img class="logo " src="{{ "/images/logo-master-dnhd.svg" | relURL }}" alt="">
+    </div>
+
     <nav>
-    <ul class="menu no-list-style">
+      <ul class="menu no-list-style">
 
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
 
-      {{ $pages := .Pages }}
-      {{ $pages = .Site.RegularPages }}
-      {{ range (where $pages "Section" "!=" "") }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-      </li>
-      {{ end }}
+        {{ $pages := .Pages }}
+        {{ $pages = .Site.RegularPages }}
+        {{ range (where $pages "Section" "!=" "") }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </li>
+        {{ end }}
 
-    </ul>
-    <hr/>
+      </ul>
     </nav>
+
+  </header>
