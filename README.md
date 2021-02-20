@@ -4,7 +4,17 @@ Installer Hugo
 
 ```
 git clone https://github.com/master-DNHD/masterclass-presentation.git
+```
+```
 cd masterclass-presentation
+```
+```
+git submodule init
+```
+```
+git submodule update
+```
+```
 hugo serve
 ```
 
