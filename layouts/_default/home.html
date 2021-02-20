@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Site.Title }}</h1>
+
+{{ .Content }}
+
+<h2>Éditorial</h2>
+
+{{ with .Site.GetPage "edito.md" }}{{ .Content }}{{ end }}
+
+<h2>Autres parties</h2>
+
+<ul>
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range (where $pages "Section" "!=" "") }}
+  <li class="parts">
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
