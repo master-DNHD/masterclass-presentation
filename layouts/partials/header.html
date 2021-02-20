@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Site.Title }}</title>
+  {{ partial "metas.html" . }}
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
   <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +18,9 @@
 
   <header>
     <div>
-      <img class="logo " src="{{ "/images/logo-master-dnhd.svg" | relURL }}" alt="">
+      <a href="/">
+        <img class="logo" src="{{ "/images/logo-master-dnhd.svg" | relURL }}" alt="">
+      </a>
     </div>
 
     <nav>
