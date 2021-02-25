@@ -34,10 +34,28 @@ h4 {
   border-radius: 5px;
 }
 
+/* ===========================
+header =======================
+==============================*/
+
 .menu a:hover {
   background-color: var(--white);
   transition: background-color 0.2s;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* ===========================
+footer =======================
+==============================*/
 
 footer {
   border-top: 2px solid var(--white);
@@ -53,12 +71,10 @@ footer a {
   text-decoration: none;
 }
 
-hr {
-  border-style: dashed;
-  color: #ddd;
-}
+/* ===========================
+codes =======================
+==============================*/
 
-/* code */
 pre {
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
@@ -74,7 +90,15 @@ pre code {
   background: none;
 }
 
-/* misc elements */
+/* ===========================
+médias =======================
+==============================*/
+
+hr {
+  border-style: dashed;
+  color: #ddd;
+}
+
 img,
 iframe,
 video {
@@ -112,21 +136,9 @@ tr:nth-child(even) {
   background: #eee;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 100px;
-}
-
-.no-list-style {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* ===========================
+posts ========================
+==============================*/
 
 .zapper {
   display: flex;
@@ -152,4 +164,56 @@ header {
 .zapper span {
   display: block;
   font-weight: bold;
+}
+
+/* ===========================
+carrousel ====================
+==============================*/
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+.carrousel:not(.pagedjs_pages .carrousel) {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden
+}
+
+.carrousel .carrousel-container:not(.pagedjs_pages .carrousel .carrousel-container) {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.carrousel figure:not(.pagedjs_pages .carrousel figure) {
+  margin: 0;
+  width: 20%;
+  height: auto;
+  display: inline-block;
+}
+
+.carrousel figcaption:not(.pagedjs_pages .carrousel figcaption) {
+  font-size: 16px;
+}
+
+/* ===========================
+other ========================
+==============================*/
+
+.no-list-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
