@@ -2,6 +2,8 @@
 :root {
   --white: rgb(231, 231, 231);
   --blue: #003566;
+
+  font-size: 62.5%;
 }
 
 body {
@@ -9,10 +11,24 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
+  font-size: 1.6rem;
+}
+
+h1.title-section {
+  color: var(--blue);
+  font-size: 4rem;
 }
 
 h1 {
-  color: var(--blue);
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
 }
 
 h1,
@@ -20,6 +36,10 @@ h2,
 h3,
 h4 {
   font-family: 'Bebas Neue', sans-serif;
+}
+
+.menu+.menu {
+  margin-top: 1.2rem;
 }
 
 .menu li {
@@ -61,10 +81,6 @@ footer {
   border-top: 2px solid var(--white);
   text-align: center;
   margin-top: 40px;
-}
-
-.title {
-  font-size: 1.1em;
 }
 
 footer a {
