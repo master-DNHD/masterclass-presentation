@@ -1,3 +1,5 @@
-# Entête de l'imprimé
+![](/images/logo-master-dnhd.svg)
 
-Modifié à `/content/imprimer/_index.md`
+# Masterclass DNHD
+
+## Manuel Zacklad

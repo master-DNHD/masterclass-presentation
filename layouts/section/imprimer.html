@@ -13,16 +13,20 @@
 
 <body>
 
-  {{ .Content }}
+  <div id="cover">
+    {{ .Content }}
+  </div>
 
-  {{ $pages := .Pages }}
-  {{ $pages = .Site.RegularPages }}
-  {{ range (where $pages "Section" "!=" "") }}
-
-  <h1 class="title-section">{{ .Title }}</h1>
-  {{ .Content }}
-
-  {{ end }}
+  <div id="content">
+    {{ $pages := .Pages }}
+    {{ $pages = .Site.RegularPages }}
+    {{ range (where $pages "Section" "!=" "") }}
+  
+    <h1 class="title-section">{{ .Title }}</h1>
+    {{ .Content }}
+  
+    {{ end }}
+  </div>
 
 </body>
 
