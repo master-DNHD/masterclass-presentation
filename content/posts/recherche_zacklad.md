@@ -1,6 +1,6 @@
 ---
-title: Organisation des connaissances
-date: 2021-01-01
+title: Recherches de Manuel Zacklad
+date: 2021-01-02
 draft: false
 ---
 
