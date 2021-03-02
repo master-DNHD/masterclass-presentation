@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
   <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "/css/bootstrap-grid.min.css" | relURL }}" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bebas+Neue&display=swap"
     rel="stylesheet">
@@ -32,7 +33,7 @@
       </div>
     </a>
 
-    <nav >
+    <nav class="d-none d-lg-block">
       <ul class="menu no-list-style">
         {{ $pages := .Pages }}
         {{ $pages = .Site.RegularPages }}
@@ -46,3 +47,7 @@
     </nav>
 
   </header>
+
+  <main>
+
+    <div class="wrapper col-md-8">

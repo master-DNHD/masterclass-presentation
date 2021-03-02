@@ -1,16 +1,11 @@
 {{ partial "header.html" . }}
 
-<main>
-    <div class="wrapper">
-        <div class="article-meta">
-            <h1 class="title-section">{{ .Title }}</h1>
-        </div>
-
-        {{ .Content }}
-
-
-        {{ partial "zapper.html" . }}
+    <div class="article-meta">
+        <h1 class="title-section">{{ .Title }}</h1>
     </div>
-</main>
+
+    {{ .Content }}
+
+    {{ partial "zapper.html" . }}
 
 {{ partial "footer.html" . }}
