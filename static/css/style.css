@@ -1,17 +1,25 @@
 
 :root {
-  --white: rgb(231, 231, 231);
   --blue: #003566;
+  --ground-color: #001d3d;
 
   font-size: 62.5%;
 }
 
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 1.5em;
+  margin: 0;
   font-size: 1.6rem;
+  font-family: 'Baskervville';
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main {
+  margin-bottom: 80px;
+  padding: 0 1rem;
 }
 
 h1.title-section {
@@ -38,39 +46,61 @@ h4 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.menu+.menu {
-  margin-top: 1.2rem;
-}
-
 .menu li {
   display: inline-block;
 }
 
-.article-meta,
 .menu a {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
-  padding: 5px;
   border-radius: 5px;
+  font-size: 2rem;
+  font-family: 'Bebas Neue';
+  padding: 0.5rem;
+  margin: 0.5rem 0.2rem;
+}
+
+.menu a:first-of-type {
+  margin-left: 1rem;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s;
 }
 
 /* ===========================
 header =======================
 ==============================*/
 
-.menu a:hover {
-  background-color: var(--white);
-  transition: background-color 0.2s;
-}
-
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: var(--ground-color);
+  color: white;
+  margin-bottom: 5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   width: 100px;
+}
+
+h1.title-site {
+  font-family: 'Baskervville';
+  font-size: 2.2rem;
 }
 
 /* ===========================
@@ -78,13 +108,18 @@ footer =======================
 ==============================*/
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   border-top: 2px solid var(--white);
-  text-align: center;
   margin-top: 40px;
+  background-color: var(--ground-color);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 footer a {
-  text-decoration: none;
+  color: inherit;
 }
 
 /* ===========================
@@ -157,13 +192,20 @@ posts ========================
 ==============================*/
 
 .zapper {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
 }
 
 .zapper div {
-  background: var(--white);
   border-radius: 5px;
+  background-color: var(--ground-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 40%;
+  min-width: 200px;
+  margin-top: 2rem;
 }
 
 .zapper div+div {
@@ -173,7 +215,7 @@ posts ========================
 .zapper a {
   color: inherit;
   display: block;
-  margin: 5px;
+  margin: 1rem;
   text-decoration: none;
 }
 

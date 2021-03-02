@@ -14,26 +14,25 @@
     rel="stylesheet">
 
   {{ partial "matomo.html" . }}
-
-  {{ partial "head_custom.html" . }}
 </head>
 
 <body>
 
   <header>
-    <div>
-      <a href="/">
-        <img class="logo" src="{{ "/images/logo-master-dnhd.svg" | relURL }}" alt="">
-      </a>
-    </div>
 
-    <nav>
-      <ul class="menu no-list-style">
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
+    <a href="/">
+      <div class="header-section">
+        <div>
+          <img class="logo" src="{{ "/images/logo-master-dnhd.svg" | relURL }}" alt="logo master DNHD">
+        </div>
+          
+        <div>
+          <h1 class="title-site">Masterclass<br/>DNHD#3</h1>
+        </div>
+      </div>
+    </a>
 
+    <nav >
       <ul class="menu no-list-style">
         {{ $pages := .Pages }}
         {{ $pages = .Site.RegularPages }}

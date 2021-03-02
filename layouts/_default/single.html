@@ -1,31 +1,16 @@
 {{ partial "header.html" . }}
 
-<div class="article-meta">
-    <h1 class="title-section">{{ .Title }}</h1>
-</div>
-
 <main>
-{{ .Content }}
+    <div class="wrapper">
+        <div class="article-meta">
+            <h1 class="title-section">{{ .Title }}</h1>
+        </div>
+
+        {{ .Content }}
+
+
+        {{ partial "zapper.html" . }}
+    </div>
 </main>
-
-<div class="zapper">
-    {{ if not (eq .Params.prev false)  }}
-    <div class="zapper-next">
-        {{ if .NextInSection }}
-        <a href="{{ .NextInSection.RelPermalink }}">Précédent :
-            <span>{{ .NextInSection.Title }}</span></a>
-        {{ end }}
-    </div>
-    {{ end }}
-
-    {{ if not (eq .Params.next false)  }}
-    <div class="zapper-prev">
-        {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.RelPermalink }}">Suivant :
-            <span>{{ .PrevInSection.Title }}</span></a>
-        {{ end }}
-    </div>
-    {{ end }}
-</div>
 
 {{ partial "footer.html" . }}

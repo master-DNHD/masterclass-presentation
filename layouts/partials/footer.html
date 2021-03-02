@@ -1,5 +1,9 @@
   <footer>
-    <p>Par les <a href="https://masterdnhd.e3dlab.net/" target="_blank">étudiant·e·s du master DNHD</a></p>
+    <ul class="menu no-list-style">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
   </footer>
 
   </body>
