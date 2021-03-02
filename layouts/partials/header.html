@@ -19,7 +19,7 @@
 
 <body>
 
-  <header>
+  <header class="">
 
     <a href="/">
       <div class="header-section">
@@ -33,8 +33,23 @@
       </div>
     </a>
 
-    <nav class="d-none d-lg-block">
+    <span id="open-menu" class="btn-menu || d-lg-none">menu</span>
+
+    <nav class="d-none d-lg-block ms-5">
       <ul class="menu no-list-style">
+        {{ $pages := .Pages }}
+        {{ $pages = .Site.RegularPages }}
+        {{ range (where $pages "Section" "!=" "") }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </li>
+        {{ end }}
+
+      </ul>
+    </nav>
+
+    <nav class="d-lg-none">
+      <ul id="mobile-menu" class="menu menu-mobile no-list-style">
         {{ $pages := .Pages }}
         {{ $pages = .Site.RegularPages }}
         {{ range (where $pages "Section" "!=" "") }}
