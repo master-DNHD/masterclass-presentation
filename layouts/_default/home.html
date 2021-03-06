@@ -1,24 +1,14 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
+<div id="home">
+    <h1>Masterclass DNHD #3</h1>
+    
+    
+    <h2>Classement et lecture des connaissances à l'épreuve de  l'indexation et de l'annotation</h2>
+    
 
-    <h1>{{ .Site.Title }}</h1>
+</div>
     
-    {{ .Content }}
-
-    <h1 class="title-section">Éditorial</h1>
     
-    {{ with .Site.GetPage "edito.md" }}{{ .Content }}{{ end }}
-    
-    <h2>Autres parties</h2>
-    
-    <ul class="no-list-style">
-      {{ $pages := .Pages }}
-      {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-      {{ range (where $pages "Section" "!=" "") }}
-      <li class="parts">
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-      </li>
-      {{ end }}
-    </ul>
 
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . }} 

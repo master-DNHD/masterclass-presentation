@@ -292,3 +292,17 @@ other ========================
   padding: 0;
   margin: 0;
 }
+
+/* ===========================
+HOME ========================
+==============================*/
+
+#home {
+  height: 100vh;
+  background: url(https://www.fillmurray.com/640/360) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: aquamarine;
+}

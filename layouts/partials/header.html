@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{ partial "metas.html" . }}
-  <title>{{ .Site.Title }}</title>
-
-  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "/css/bootstrap-grid.min.css" | relURL }}" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bebas+Neue&display=swap"
-    rel="stylesheet">
-
-  {{ partial "matomo.html" . }}
-</head>
-
-<body>
-
+{{partial "head.html" .}}
   <header class="">
 
     <a href="/">
