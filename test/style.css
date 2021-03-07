@@ -32,10 +32,20 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.arrow {
+.center {
     display: flex;
     justify-content: center;
 }
+
+.arrow {
+    width: 60px;
+    fill:white;
+}
+.arrow:hover {
+    width: 62px;
+    fill:rgba(255, 255, 255, 0.746);
+}
+
 .buttons {
     width: 45%;
     display: flex;
