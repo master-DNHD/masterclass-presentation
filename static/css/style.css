@@ -308,7 +308,8 @@ HOME ========================
   font-family: 'Libre Baskerville', serif;
     color: white;
     font-size: 60px;
-    letter-pacing: 5px;
+    letter-spacing: 2px;
+    
   
 }
 
@@ -361,3 +362,6 @@ HOME ========================
 #home a {
   text-decoration: none;
 }
+
+
+
