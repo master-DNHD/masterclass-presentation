@@ -4,6 +4,24 @@
   h1 {
     string-set: title content(text);
   }
+  @page:first {
+    margin: 0;
+    size: A4;
+
+    background: url(../../images/home_mobile.png) no-repeat center center fixed; max-height: 100vh;
+height: 100vh;
+margin: 0;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    @top-left {
+      display: none;
+    }
+    @bottom-right {
+      display: none;
+    }
+  }
 
   @page {
     size: A4;
@@ -22,7 +40,7 @@
       font-size: 1.3rem;
     }
   }
-
+  
   #cover {
     display: flex;
     flex-direction: column;
@@ -30,7 +48,15 @@
     break-after: page;
   }
 
-  #cover h1 { font-size: 8rem; }
-  #cover h2 { color: var(--blue); }
-  #cover img { height: 500px; }
+  #cover h1 { position: absolute; font-size: 10rem; color: white; text-align: center;}
+  #cover h2 { position: absolute; color: white; }
+  #cover img { 
+    max-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  object-fit: cover;}
 }

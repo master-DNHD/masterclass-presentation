@@ -363,5 +363,10 @@ HOME ========================
   text-decoration: none;
 }
 
-
+/* @media screen and (max-width: 600px) {
+  .boite {
+    width: 100%;
+    background-color: #CCA000;
+  }
+} */
 
