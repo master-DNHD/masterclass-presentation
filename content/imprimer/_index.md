@@ -1,4 +1,4 @@
-![](/images/logo-master-dnhd.svg)
+![](/images/home_mobile.png)
 
 # Masterclass DNHD
 
