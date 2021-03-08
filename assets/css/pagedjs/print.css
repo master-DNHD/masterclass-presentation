@@ -8,13 +8,7 @@
     margin: 0;
     size: A4;
 
-    background: url(../../images/home_mobile.png) no-repeat center center fixed; max-height: 100vh;
-height: 100vh;
-margin: 0;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    
     @top-left {
       display: none;
     }

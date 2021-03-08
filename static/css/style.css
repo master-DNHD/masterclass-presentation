@@ -363,10 +363,63 @@ HOME ========================
   text-decoration: none;
 }
 
-/* @media screen and (max-width: 600px) {
-  .boite {
+@media (max-width: 750px) {
+  #home .boite {
     width: 100%;
-    background-color: #CCA000;
+    
+    
   }
-} */
+  #home  h1{
+    
+      font-size: 40px;
+      letter-spacing: 2px;
+      
+    
+  }
+  #home h1 {
+    
+    margin: 10px 10px 10px 20px
+  }
+  
+  #home h2 {
+    
+    margin: 0px 10px 0px 20px
+  }
+  
+  #home .buttons {
+    width: 100%;
+    
+  
+  }
+}
+
+@media (max-width: 900px) {
+  #home .boite {
+    width: 100%;
+    
+    
+  }
+  #home  h1{
+    
+      font-size: 50px;
+      letter-spacing: 2px;
+      
+    
+  }
+  
+  #home h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 30px; 
+    letter-spacing: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #home .boite {
+    width: 100%;
+    
+  }
+
+}
 
