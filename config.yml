@@ -30,3 +30,6 @@ menu:
     - name: Version imprimable
       url: "imprimer/"
       weight: 2
+    - name: Live
+      url: "live/"
+      weight: 2
