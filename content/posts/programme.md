@@ -4,6 +4,12 @@ date: 2020-12-28
 draft: false
 ---
 
+# Jeudi 18 mars
+
+| horaire     | intervenant·e·s | intitulé                        |
+|-------------|-----------------|---------------------------------|
+| 10h - 12h30 | Manuel Zacklad  | Carte Blanche de Manuel Zacklad |
+
 # Vendredi 19 mars
 
 | horaire     | intervenant·e·s              | intitulé                                                                                                                    |
