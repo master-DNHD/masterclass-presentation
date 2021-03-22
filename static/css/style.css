@@ -387,7 +387,10 @@ HOME ========================
     
     margin: 0px 10px 0px 20px
   }
-  
+  #home .date {
+    font-size: 30px;
+    margin: 0px 10px 0px 20px
+  }
   #home .buttons {
     width: 100%;
     
